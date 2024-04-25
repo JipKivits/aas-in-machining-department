@@ -1,0 +1,8 @@
+[
+	{
+		"uniqueId": "TestAasxSubmodel/IntProp",
+		"submodelEndpoint": "http://aas-env-db:8081/submodels/aHR0cHM6Ly9leGFtcGxlLmNvbS9pZHMvc20vNzA1M18xMTQwXzQwNDJfMDI3MQ",
+		"idShortPath": "IntProp",
+		"api": "DotAAS-V3"
+	}
+]

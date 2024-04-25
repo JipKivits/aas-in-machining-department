@@ -1,0 +1,8 @@
+[
+	{
+		"datasource": "Temperature",
+		"transformers": ["dataValueToJson", "jsonataExtractValue"],
+		"datasinks": ["TestAasxSubmodel/IntProp"],
+		"trigger": "event"
+	}
+]
