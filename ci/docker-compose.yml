@@ -25,6 +25,12 @@ services:
     container_name: mqtt
     ports:
       - 1884:1884
+    healthcheck:
+      test: ["CMD-SHELL", mosquitto_sub -p 1884 -t 'topic' -C 1 -E -i probe -W 3]
+      interval: 5s
+      retries: 3
+      start_period: 1s
+      timeout: 10s 
       
   aas-env:
     image: eclipsebasyx/aas-environment:2.0.0-SNAPSHOT
