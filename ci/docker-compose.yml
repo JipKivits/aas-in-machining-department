@@ -19,33 +19,6 @@ services:
     # Maps tcp port to host
     #ports:
     #  - 27017:27017
-    
-  mqtt:
-    image: eclipse-mosquitto:2.0.15
-    container_name: mqtt
-    ports:
-      - 1884:1884
-    healthcheck:
-      test: ["CMD-SHELL", mosquitto_sub -p 1884 -t 'topic' -C 1 -E -i probe -W 3]
-      interval: 5s
-      retries: 3
-      start_period: 1s
-      timeout: 10s 
-      
-  aas-env:
-    image: eclipsebasyx/aas-environment:2.0.0-SNAPSHOT
-    container_name: aas-env
-    ports:
-        - 8081:8081
-    depends_on:
-        mongo:
-            condition: service_healthy
-        mqtt:
-            condition: service_healthy
-        aas-registry:
-            condition: service_healthy
-        sm-registry:
-            condition: service_healthy
             
   aas-registry:
     image: eclipsebasyx/aas-registry-log-mem:2.0.0-SNAPSHOT
@@ -64,15 +37,6 @@ services:
     depends_on:
       mongo:
         condition: service_healthy
-
-  databridge:
-      container_name: databridge
-      ports:
-          - 8085:8085
-      image: eclipsebasyx/databridge:1.0.0-SNAPSHOT
-      depends_on:
-        aas-env:
-          condition: service_healthy
 
 
 # environment:
