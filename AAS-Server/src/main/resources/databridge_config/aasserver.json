@@ -1,8 +1,38 @@
 [
 	{
-		"uniqueId": "TestAasxSubmodel/IntProp",
-		"submodelEndpoint": "http://aas-env-db:8081/submodels/aHR0cHM6Ly9leGFtcGxlLmNvbS9pZHMvc20vNzA1M18xMTQwXzQwNDJfMDI3MQ",
-		"idShortPath": "IntProp",
+		"uniqueId": "Temperatures/RoomTemp",
+		"submodelEndpoint": "http://aas-env:8081/submodels/aHR0cHM6Ly9leGFtcGxlLmNvbS9pZHMvc20vT3BlcmF0aW9uYWxEYXRh",
+		"idShortPath": "Temperatures.RoomTemp",
+		"api": "DotAAS-V3"
+	},
+	{
+		"uniqueId": "Temperatures/SpindleTemp",
+		"submodelEndpoint": "http://aas-env:8081/submodels/aHR0cHM6Ly9leGFtcGxlLmNvbS9pZHMvc20vT3BlcmF0aW9uYWxEYXRh",
+		"idShortPath": "Temperatures.SpindleTemp",
+		"api": "DotAAS-V3"
+	},
+	{
+		"uniqueId": "Report/MachineProgramState",
+		"submodelEndpoint": "http://aas-env:8081/submodels/aHR0cHM6Ly9leGFtcGxlLmNvbS9pZHMvc20vT3BlcmF0aW9uYWxEYXRh",
+		"idShortPath": "Report.MachineProgramState",
+		"api": "DotAAS-V3"
+	},
+	{
+		"uniqueId": "Report/MachineState",
+		"submodelEndpoint": "http://aas-env:8081/submodels/aHR0cHM6Ly9leGFtcGxlLmNvbS9pZHMvc20vT3BlcmF0aW9uYWxEYXRh",
+		"idShortPath": "Report.MachineState",
+		"api": "DotAAS-V3"
+	},
+	{
+		"uniqueId": "Faults/ActiveFaultList",
+		"submodelEndpoint": "http://aas-env:8081/submodels/aHR0cHM6Ly9leGFtcGxlLmNvbS9pZHMvc20vT3BlcmF0aW9uYWxEYXRh",
+		"idShortPath": "Faults.ActiveFaultList",
+		"api": "DotAAS-V3"
+	},
+	{
+		"uniqueId": "Report/ActiveProgram",
+		"submodelEndpoint": "http://aas-env:8081/submodels/aHR0cHM6Ly9leGFtcGxlLmNvbS9pZHMvc20vT3BlcmF0aW9uYWxEYXRh",
+		"idShortPath": "Report.ActiveProgram",
 		"api": "DotAAS-V3"
 	}
 ]

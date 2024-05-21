@@ -4,7 +4,6 @@ services:
     image: mongo:5.0.10
     container_name: mongo-db
     # Provide mongo config
-    restart: always
     environment:
       MONGO_INITDB_ROOT_USERNAME: mongoAdmin
       MONGO_INITDB_ROOT_PASSWORD: mongoPassword
@@ -75,7 +74,7 @@ services:
         condition: service_healthy
 
   databridge:
-      container_name: databridge
+      container_name: databridge-db
       ports:
           - 8085:8085
       volumes:

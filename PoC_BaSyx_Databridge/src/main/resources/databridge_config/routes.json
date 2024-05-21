@@ -1,6 +1,6 @@
 [
 	{
-		"datasource": "Temperature",
+		"datasource": "RoomTemp",
 		"transformers": ["dataValueToJson", "jsonataExtractValue"],
 		"datasinks": ["TestAasxSubmodel/IntProp"],
 		"trigger": "event"
