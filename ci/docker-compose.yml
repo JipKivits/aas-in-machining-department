@@ -25,15 +25,10 @@ services:
     container_name: mqtt
     ports:
       - 1884:1884
-    volumes:
-      - ./src/main/resources/mosquitto:/mosquitto/config
       
   aas-env:
     image: eclipsebasyx/aas-environment:2.0.0-SNAPSHOT
     container_name: aas-env
-    volumes:
-      - ./src/main/resources/aas_config/aas-env.properties:/application/application.properties
-      - ./src/main/resources/aas:/application/aas
     ports:
         - 8081:8081
     depends_on:
@@ -51,8 +46,6 @@ services:
     container_name: aas-registry
     ports:
       - 8082:8080
-    volumes:
-      - ./src/main/resources/aas_config/aas-registry.yml:/workspace/config/application.yml
     depends_on:
       mongo:
         condition: service_healthy
@@ -61,9 +54,7 @@ services:
     image: eclipsebasyx/submodel-registry-log-mem:2.0.0-SNAPSHOT
     container_name: sm-registry
     ports:
-      - 8083:8080
-    volumes:
-      - ./src/main/resources/aas_config/sm-registry.yml:/workspace/config/application.yml
+      - 8083:8083
     depends_on:
       mongo:
         condition: service_healthy
@@ -72,8 +63,6 @@ services:
       container_name: databridge
       ports:
           - 8085:8085
-      volumes:
-          - ./src/main/resources/databridge_config:/usr/share/config
       image: eclipsebasyx/databridge:1.0.0-SNAPSHOT
       depends_on:
         aas-env:
