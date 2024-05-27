@@ -1,0 +1,40 @@
+[
+	{
+		"datasource": "RoomTemp",
+		"transformers": ["dataValueToJson", "jsonataExtractValue"],
+		"datasinks": ["Temperatures/RoomTemp"],
+		"trigger": "event"
+	},
+	{
+		"datasource": "SpindleTemp",
+		"transformers": ["dataValueToJson", "jsonataExtractValue"],
+		"datasinks": ["Temperatures/SpindleTemp"],
+		"trigger": "event"
+	},
+	{
+		"datasource": "MachineProgramState",
+		"transformers": ["dataValueToJson", "jsonataExtractValue"],
+		"datasinks": ["Report/MachineProgramState"],
+		"trigger": "event"
+	},
+	{
+		"datasource": "MachineState",
+		"transformers": ["dataValueToJson", "jsonataExtractValue"],
+		"datasinks": ["Report/MachineState"],
+		"trigger": "event"
+	}
+	,
+	{
+		"datasource": "ActiveFaultList",
+		"transformers": ["dataValueToJson", "jsonataExtractValue"],
+		"datasinks": ["Faults/ActiveFaultList"],
+		"trigger": "event"
+	}
+	,
+	{
+		"datasource": "ActiveProgram",
+		"transformers": ["dataValueToJson", "jsonataExtractValue"],
+		"datasinks": ["Report/ActiveProgram"],
+		"trigger": "event"
+	}
+]

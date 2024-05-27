@@ -1,0 +1,5 @@
+/home/jkivits/git/aas-in-machining-department/AAS-Server/src/test/java/com/vim/aas/aasserver/smregistry/SubmodelRepositoryTest.java
+/home/jkivits/git/aas-in-machining-department/AAS-Server/src/test/java/com/vim/aas/aasserver/aasenvironment/AasEnvironmentLoaderTest.java
+/home/jkivits/git/aas-in-machining-department/AAS-Server/src/test/java/com/vim/aas/aasserver/aasenvironment/PreconfigurationLoaderTextualResourceTest.java
+/home/jkivits/git/aas-in-machining-department/AAS-Server/src/test/java/com/vim/aas/aasserver/aasenvironment/IdShortPathTestHelper.java
+/home/jkivits/git/aas-in-machining-department/AAS-Server/src/test/java/com/vim/aas/aasserver/aasenvironment/TestIdShortPathBuilder.java

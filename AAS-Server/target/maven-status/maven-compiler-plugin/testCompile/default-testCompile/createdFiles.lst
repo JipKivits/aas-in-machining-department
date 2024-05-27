@@ -1,0 +1,5 @@
+com/vim/aas/aasserver/smregistry/SubmodelRepositoryTest.class
+com/vim/aas/aasserver/aasenvironment/AasEnvironmentLoaderTest.class
+com/vim/aas/aasserver/aasenvironment/TestIdShortPathBuilder.class
+com/vim/aas/aasserver/aasenvironment/PreconfigurationLoaderTextualResourceTest.class
+com/vim/aas/aasserver/aasenvironment/IdShortPathTestHelper.class
