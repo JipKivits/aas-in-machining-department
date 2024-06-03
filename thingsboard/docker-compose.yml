@@ -17,7 +17,6 @@ services:
     extra_hosts:
       - "host.docker.internal:host-gateway"
     
-    version: '3.4'
     
   # ThingsBoard IoT Gateway Service Configuration
   tb-gateway:
@@ -42,11 +41,11 @@ services:
     environment:
       - host=host.docker.internal
       - port=1883
-      - accessToken=iTiJPJCynsM5w6M3IeEW
+      - accessToken=0987
 
     # Volumes bind
     volumes:
-      - tb-gw-config:/thingsboard_gateway/config
+      - ./thingsboardgateway_config:/thingsboard_gateway/config
       - tb-gw-logs:/thingsboard_gateway/logs
       - tb-gw-extensions:/thingsboard_gateway/extensions
 

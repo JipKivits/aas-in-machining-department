@@ -1,9 +1,9 @@
 version: '3.4'
 services:
   # ThingsBoard IoT Gateway Service Configuration
-  tb-gateway:
+  tb-gateway-test:
     image: thingsboard/tb-gateway
-    container_name: tb-gateway
+    container_name: tb-gateway-test
     restart: always
 
     # Ports bindings - required by some connectors
@@ -23,7 +23,7 @@ services:
     environment:
       - host=host.docker.internal
       - port=1883
-      - accessToken=iTiJPJCynsM5w6M3IeEW
+      - accessToken=6S6TJdfRKwDMiEHggEAJ
 
     # Volumes bind
     volumes:
