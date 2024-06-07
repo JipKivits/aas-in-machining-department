@@ -1,7 +1,7 @@
 [
 	{
 		"uniqueId": "RoomTemp",
-		"nodeInformation": "ns=1;i=2014",
+		"nodeInformation": "ns=2;i=2120",
 		"serverUrl": "10.56.22.12",
 		"serverPort": 4840,
 		"pathToService": "",
@@ -12,7 +12,7 @@
 	},
 	{
 		"uniqueId": "SpindleTemp",
-		"nodeInformation": "ns=1;i=2013",
+		"nodeInformation": "ns=2;i=2119",
 		"serverUrl": "10.56.22.12",
 		"serverPort": 4840,
 		"pathToService": "",
@@ -35,17 +35,6 @@
 	{
 		"uniqueId": "MachineState",
 		"nodeInformation": "ns=1;i=2003",
-		"serverUrl": "10.56.22.12",
-		"serverPort": 4840,
-		"pathToService": "",
-		"parameters": {
-			"allowedSecurityPolicies": "None",
-			"requestedPublishingInterval": 50
-		}
-	},
-	{
-		"uniqueId": "ActiveFaultList",
-		"nodeInformation": "ns=1;i=2010",
 		"serverUrl": "10.56.22.12",
 		"serverPort": 4840,
 		"pathToService": "",

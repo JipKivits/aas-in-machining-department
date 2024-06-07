@@ -24,12 +24,6 @@
 		"api": "DotAAS-V3"
 	},
 	{
-		"uniqueId": "Faults/ActiveFaultList",
-		"submodelEndpoint": "http://aas-env:8081/submodels/aHR0cHM6Ly9leGFtcGxlLmNvbS9pZHMvc20vT3BlcmF0aW9uYWxEYXRh",
-		"idShortPath": "Faults.ActiveFaultList",
-		"api": "DotAAS-V3"
-	},
-	{
 		"uniqueId": "Report/ActiveProgram",
 		"submodelEndpoint": "http://aas-env:8081/submodels/aHR0cHM6Ly9leGFtcGxlLmNvbS9pZHMvc20vT3BlcmF0aW9uYWxEYXRh",
 		"idShortPath": "Report.ActiveProgram",

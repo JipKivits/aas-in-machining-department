@@ -1,0 +1,42 @@
+{
+  "connection": {
+    "str": "Driver={ODBC Driver 18 for SQL Server};Server=NLDC01VS602.VDLGROEP.LOCAL;Database=VIM_VBS;Trusted_Connection=yes;TrustServerCertificate=yes",
+    "attributes": {
+      "autocommit": true,
+      "timeout": 0
+    },
+    "encoding": "utf-8",
+    "decoding": {
+      "char": "utf-8",
+      "wchar": "utf-8",
+      "metadata": "utf-16le"
+    },
+    "reconnect": true,
+    "reconnectPeriod": 60
+  },
+  "polling": {
+    "query": "SELECT T1.order_nr, T1.aantal_uur_gepland, CONVERT(varchar, T1.planning_datum, 101) planning_datum, T1.aantal, T1.opmerking, CONVERT(varchar, T1.planning_datum_tot) planning_datum_tot, T1.achterstand, T1.aantal_uren_geboekt, T1.tekening_nr, T1.bewerking_afgerond FROM dbo.machine_planning T1 WHERE T1.machine_id = '5361' AND order_nr > ? AND bewerking_afgerond = 'FALSE'",
+    "period": 60,
+    "iterator": {
+      "column": "order_nr",
+      "query": "SELECT MIN(order_nr) FROM dbo.machine_planning WHERE machine_id = '5361'",
+      "save": false,
+      "persistent": false
+    }
+  },
+  "mapping": {
+    "device": {
+      "type": "None",
+      "name": "'VBS ' + order_nr"
+    },
+    "sendDataOnlyOnChange": false,
+    "timeseries": "*"
+  },
+  "logLevel": "DEBUG",
+  "name": "VBS",
+  "enableRemoteLogging": false,
+  "id": "c6c9e3d8-2ac1-43ac-a27e-bf60aab0a247",
+  "serverSideRpc": {
+    "methods": {}
+  }
+}

@@ -1,23 +1,5 @@
 {
-  "VBS 9098727": {
-    "connectorId": "c6c9e3d8-2ac1-43ac-a27e-bf60aab0a247",
-    "connectorName": "VBS",
-    "deviceType": "None",
-    "renaming": null
-  },
-  "VBS 9100204": {
-    "connectorId": "c6c9e3d8-2ac1-43ac-a27e-bf60aab0a247",
-    "connectorName": "VBS",
-    "deviceType": "None",
-    "renaming": null
-  },
   "VBS 9105023": {
-    "connectorId": "c6c9e3d8-2ac1-43ac-a27e-bf60aab0a247",
-    "connectorName": "VBS",
-    "deviceType": "None",
-    "renaming": null
-  },
-  "VBS 9106064": {
     "connectorId": "c6c9e3d8-2ac1-43ac-a27e-bf60aab0a247",
     "connectorName": "VBS",
     "deviceType": "None",
@@ -30,18 +12,6 @@
     "renaming": null
   },
   "VBS 9106528": {
-    "connectorId": "c6c9e3d8-2ac1-43ac-a27e-bf60aab0a247",
-    "connectorName": "VBS",
-    "deviceType": "None",
-    "renaming": null
-  },
-  "VBS 9106530": {
-    "connectorId": "c6c9e3d8-2ac1-43ac-a27e-bf60aab0a247",
-    "connectorName": "VBS",
-    "deviceType": "None",
-    "renaming": null
-  },
-  "VBS 9106531": {
     "connectorId": "c6c9e3d8-2ac1-43ac-a27e-bf60aab0a247",
     "connectorName": "VBS",
     "deviceType": "None",
@@ -60,12 +30,6 @@
     "renaming": null
   },
   "VBS 9106537": {
-    "connectorId": "c6c9e3d8-2ac1-43ac-a27e-bf60aab0a247",
-    "connectorName": "VBS",
-    "deviceType": "None",
-    "renaming": null
-  },
-  "VBS 9107626": {
     "connectorId": "c6c9e3d8-2ac1-43ac-a27e-bf60aab0a247",
     "connectorName": "VBS",
     "deviceType": "None",
@@ -113,19 +77,31 @@
     "deviceType": "None",
     "renaming": null
   },
-  "VBS 9108417": {
-    "connectorId": "c6c9e3d8-2ac1-43ac-a27e-bf60aab0a247",
-    "connectorName": "VBS",
-    "deviceType": "None",
-    "renaming": null
-  },
   "VBS 9108418": {
     "connectorId": "c6c9e3d8-2ac1-43ac-a27e-bf60aab0a247",
     "connectorName": "VBS",
     "deviceType": "None",
     "renaming": null
   },
-  "VBS 9109693": {
+  "VBS 9109932": {
+    "connectorId": "c6c9e3d8-2ac1-43ac-a27e-bf60aab0a247",
+    "connectorName": "VBS",
+    "deviceType": "None",
+    "renaming": null
+  },
+  "VBS 9110020": {
+    "connectorId": "c6c9e3d8-2ac1-43ac-a27e-bf60aab0a247",
+    "connectorName": "VBS",
+    "deviceType": "None",
+    "renaming": null
+  },
+  "VBS 9110021": {
+    "connectorId": "c6c9e3d8-2ac1-43ac-a27e-bf60aab0a247",
+    "connectorName": "VBS",
+    "deviceType": "None",
+    "renaming": null
+  },
+  "VBS 9110095": {
     "connectorId": "c6c9e3d8-2ac1-43ac-a27e-bf60aab0a247",
     "connectorName": "VBS",
     "deviceType": "None",
