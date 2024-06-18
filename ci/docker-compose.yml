@@ -38,37 +38,37 @@ services:
       mongo:
         condition: service_healthy
 
-  mytb:
-    container_name: thingsboard
-    restart: always
-    image: "thingsboard/tb-postgres"
-    ports:
-      - "8080:9090"
-      - "1883:1883"
-      - "7070:7070"
-      - "5683-5688:5683-5688/udp"
-    environment:
-      TB_QUEUE_TYPE: in-memory
-    extra_hosts:
-      - "host.docker.internal:host-gateway"
+  # mytb:
+  #   container_name: thingsboard
+  #   restart: always
+  #   image: "thingsboard/tb-postgres"
+  #   ports:
+  #     - "8080:9090"
+  #     - "1883:1883"
+  #     - "7070:7070"
+  #     - "5683-5688:5683-5688/udp"
+  #   environment:
+  #     TB_QUEUE_TYPE: in-memory
+  #   extra_hosts:
+  #     - "host.docker.internal:host-gateway"
   
-  # ThingsBoard IoT Gateway Service Configuration
-  tb-gateway:
-    image: thingsboard/tb-gateway
-    container_name: tb-gateway
-    restart: always
+  # # ThingsBoard IoT Gateway Service Configuration
+  # tb-gateway:
+  #   image: thingsboard/tb-gateway
+  #   container_name: tb-gateway
+  #   restart: always
 
-    # Ports bindings - required by some connectors
-    ports:
-        - "5000:5000" # Comment if you don't use REST connector and change if you use another port
+  #   # Ports bindings - required by some connectors
+  #   ports:
+  #       - "5000:5000" # Comment if you don't use REST connector and change if you use another port
 
-    # Necessary mapping for Linux
-    extra_hosts:
-      - "host.docker.internal:host-gateway"
+  #   # Necessary mapping for Linux
+  #   extra_hosts:
+  #     - "host.docker.internal:host-gateway"
 
-    # Environment variables
-    environment:
-      - host=host.docker.internal
-      - port=1883
-      - accessToken=0987
+  #   # Environment variables
+  #   environment:
+  #     - host=host.docker.internal
+  #     - port=1883
+  #     - accessToken=0987
 
