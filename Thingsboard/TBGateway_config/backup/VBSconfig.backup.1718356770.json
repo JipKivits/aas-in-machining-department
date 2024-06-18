@@ -15,7 +15,7 @@
     "reconnectPeriod": 60
   },
   "polling": {
-    "query": "SELECT TOP 30 order_nr, aantal_uur_gepland, aantal_uren_geboekt, CONVERT(varchar, planning_datum, 103) planning_datum, CONVERT(varchar, planning_datum_tot, 103) planning_datum_tot, aantal, opmerking, achterstand, tekening_nr, bewerking_afgerond FROM dbo.machine_planning WHERE machine_id = '5361' AND order_nr > ?",
+    "query": "SELECT TOP 1 order_nr FROM dbo.machine_planning WHERE machine_id = '5361' AND order_nr > ?",
     "period": 120,
     "iterator": {
       "column": "order_nr",
@@ -27,13 +27,16 @@
   "mapping": {
     "device": {
       "type": "None",
-      "name": "'VBS ' + order_nr"
+      "name": "'VBS test'"
     },
     "sendDataOnlyOnChange": false,
     "timeseries": "*"
   },
   "logLevel": "DEBUG",
-  "name": "VBSconfig",
+  "name": "VBS",
   "enableRemoteLogging": false,
-  "id": "c6c9e3d8-2ac1-43ac-a27e-bf60aab0a247"
+  "id": "c6c9e3d8-2ac1-43ac-a27e-bf60aab0a247",
+  "serverSideRpc": {
+    "methods": {}
+  }
 }

@@ -33,7 +33,10 @@
     "timeseries": "*"
   },
   "logLevel": "DEBUG",
-  "name": "VBSconfig",
+  "name": "VBS",
   "enableRemoteLogging": false,
-  "id": "c6c9e3d8-2ac1-43ac-a27e-bf60aab0a247"
+  "id": "c6c9e3d8-2ac1-43ac-a27e-bf60aab0a247",
+  "serverSideRpc": {
+    "methods": {}
+  }
 }

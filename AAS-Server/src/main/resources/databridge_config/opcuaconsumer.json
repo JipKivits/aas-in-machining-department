@@ -1,7 +1,7 @@
 [
 	{
 		"uniqueId": "RoomTemp",
-		"nodeInformation": "ns=2;i=2120",
+		"nodeInformation": "ns=2;i=2124",
 		"serverUrl": "10.56.22.12",
 		"serverPort": 4840,
 		"pathToService": "",
@@ -12,7 +12,7 @@
 	},
 	{
 		"uniqueId": "SpindleTemp",
-		"nodeInformation": "ns=2;i=2119",
+		"nodeInformation": "ns=2;i=2123",
 		"serverUrl": "10.56.22.12",
 		"serverPort": 4840,
 		"pathToService": "",
